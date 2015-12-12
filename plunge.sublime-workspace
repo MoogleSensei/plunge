@@ -1,0 +1,449 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"music",
+				"musicSFX"
+			],
+			[
+				"mus",
+				"musicSFX"
+			],
+			[
+				"unl",
+				"unleashSFX"
+			],
+			[
+				"as",
+				"asplode"
+			],
+			[
+				"shak",
+				"shakeSFX"
+			],
+			[
+				"arena",
+				"arenaSFX"
+			],
+			[
+				"choo",
+				"chooseSFX"
+			],
+			[
+				"main",
+				"mainMenuButton"
+			],
+			[
+				"fiz",
+				"fizzMax"
+			],
+			[
+				"fizz",
+				"fizzCharge"
+			],
+			[
+				"check",
+				"checkEnemyCollides"
+			],
+			[
+				"jump",
+				"jumpbackAngle"
+			],
+			[
+				"mons",
+				"monster"
+			],
+			[
+				"mon",
+				"monsterColour"
+			],
+			[
+				"is",
+				"isBusted"
+			],
+			[
+				"def",
+				"defaultFizzSprayRate"
+			],
+			[
+				"back",
+				"backButton"
+			],
+			[
+				"Vic",
+				"victoryState"
+			],
+			[
+				"Menu",
+				"menuState"
+			],
+			[
+				"vic",
+				"victory"
+			],
+			[
+				"col",
+				"monsterColour"
+			],
+			[
+				"victory",
+				"victoryState"
+			],
+			[
+				"spray",
+				"sprayRange"
+			],
+			[
+				"monster",
+				"monsterColour"
+			],
+			[
+				"angle",
+				"angleRange"
+			],
+			[
+				"onsc",
+				"onScreenY"
+			],
+			[
+				"g",
+				"graphics"
+			],
+			[
+				"prev",
+				"previousAngle"
+			],
+			[
+				"falling",
+				"fallingOff"
+			],
+			[
+				"fall",
+				"fallingOffOdds"
+			],
+			[
+				"time",
+				"timeToMove"
+			],
+			[
+				"move",
+				"moveAmount"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"offset",
+				"offsetX"
+			],
+			[
+				"fizzp",
+				"fizzPercent"
+			],
+			[
+				"spra",
+				"sprayLevel"
+			],
+			[
+				"enemy",
+				"enemyAngle"
+			],
+			[
+				"monst",
+				"Monster"
+			],
+			[
+				"onscre",
+				"onScreenX"
+			],
+			[
+				"fizzper",
+				"fizzPercentDanger"
+			],
+			[
+				"gauge",
+				"gaugeGraphic"
+			],
+			[
+				"get",
+				"getWidth"
+			],
+			[
+				"else",
+				"else"
+			],
+			[
+				"playerX",
+				"playerX"
+			],
+			[
+				"mouse",
+				"mouseX"
+			],
+			[
+				"continue",
+				"continueButton"
+			],
+			[
+				"contin",
+				"continueButton"
+			],
+			[
+				"conti",
+				"continueButton"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"bui",
+				"Build: Build"
+			],
+			[
+				"a",
+				"About"
+			],
+			[
+				"",
+				"Build: Build"
+			],
+			[
+				"sets",
+				"Set Syntax: Python"
+			],
+			[
+				"build",
+				"Set Syntax: NAnt Build File"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/LudumDare34/main.lua",
+		"/C/Users/MoogleSensei/Desktop/LudumDare34/conf.lua",
+		"/C/Users/MoogleSensei/Desktop/LudumDare34/continueButton.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/states/menuState.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/states/nextLevelState.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/states/victoryState.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/things/volumeDownButton.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/things/volumeUpButton.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/things/musicButton.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/states/howToState.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/conf.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/monster.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/levelState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/nextLevelState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/victoryState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/startScreenState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/sleeper.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/chooseColorState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/howToState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/main.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/states/menuState.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/mainMenuButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/javaButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/whiteButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/yellowButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/purpleButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/orangeButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/replayButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/quitButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/playButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/howToButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/greenButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/continueButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/chooseButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/blueButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/backButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/things/redButton.lua",
+		"/C/Users/millersm/Desktop/monsterrevivening/conf.lua",
+		"/C/Users/millersm/Desktop/WhatLurksInDarkness/main.lua",
+		"/C/Users/millersm/Desktop/WhatLurksInDarkness/conf.lua",
+		"/C/Users/millersm/Desktop/LudumPractice/quitButton.lua",
+		"/C/Users/millersm/Desktop/LudumPractice/continueButton.lua",
+		"/C/Users/millersm/Desktop/LudumPractice/states/menuState.lua",
+		"/C/Users/millersm/Desktop/LudumPractice/states/levelState.lua",
+		"/C/Users/millersm/Desktop/LudumDare33/main.lua",
+		"/C/Users/millersm/Desktop/RapidPutNotes",
+		"/C/Users/millersm/Desktop/2471Notes",
+		"/C/Users/millersm/Desktop/Ludum Dare 33 Themes",
+		"/E/Call of Cthulhu/Scenarios/The Crackd and Crookd Manse/The_Cracked_and_Crooked_Manse.txt",
+		"/E/Call of Cthulhu/Scenarios/A Little Knowledge/A_Little_Knowledge2.txt",
+		"/E/Dungeons and Dragons/Evermist/Evermist.txt",
+		"/E/Call of Cthulhu/Scenarios/Death Spectrum/Death_Spectrum.txt",
+		"/E/Call of Cthulhu/Roll20.txt",
+		"/E/Call of Cthulhu/Scenarios/The Haunting/The_Haunting.txt",
+		"/E/Games/pythonGameExample/main.py",
+		"/C/Users/millersm/AppData/Roaming/Sublime Text 2/Packages/Java/JavaC.sublime-build",
+		"/E/Games/JavaGame1/main.java",
+		"/C/Users/millersm/AppData/Roaming/Sublime Text 2/Packages/Python/Python.sublime-build",
+		"/C/Users/millersm/AppData/Roaming/Sublime Text 2/Packages/Python/Miscellaneous.tmPreferences",
+		"/C/Users/millersm/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text 2/Pristine Packages/Python.sublime-package"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Up",
+			"music",
+			"mainMenu",
+			"Victory",
+			"howTo",
+			"sprayImage",
+			"red",
+			"play",
+			"continue",
+			"quit",
+			"ChooseColor",
+			"play",
+			"red",
+			"blue",
+			"continueButton",
+			"continue",
+			"MenuState",
+			"self.victory",
+			"self.menu",
+			"MenuState",
+			"monsterColour",
+			"firing",
+			"math.angle",
+			"Monster",
+			"self",
+			"enemies",
+			"monster",
+			"monsterY",
+			"monsterX",
+			"monsterGraphic",
+			"self",
+			"self.monsterGraphic",
+			"MenuState",
+			"player:draw",
+			"player",
+			"math",
+			"angle",
+			"Dreams",
+			"build",
+			"path"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true
+}
