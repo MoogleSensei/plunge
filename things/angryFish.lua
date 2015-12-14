@@ -14,7 +14,7 @@ function AngryFish:init()
     self.height = 16
     self.depth = 600
     self.dir = -1
-    self.speed = 5
+    self.speed = 2
 end
 
 function AngryFish:update(dt)
@@ -30,8 +30,7 @@ function AngryFish:update(dt)
 end
 
 function AngryFish:draw(currDepth)
-    love.graphics.setColor(255,0,0)
-    -- print(self.x.." : "..self.depth - (currDepth - 3*screenHeight/4))
+    love.graphics.setColor(255-3*darkness/4,0,0)
     love.graphics.rectangle("fill",self.x,self.depth - (currDepth - 3*screenHeight/4),self.width,self.height)
 end
 
