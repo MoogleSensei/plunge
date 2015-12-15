@@ -4,6 +4,174 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"infinitePlay"
+			],
+			[
+				"Pla",
+				"PlayState"
+			],
+			[
+				"cur",
+				"currentOption"
+			],
+			[
+				"updat",
+				"updateOptionStuff"
+			],
+			[
+				"scre",
+				"screenHeight"
+			],
+			[
+				"dep",
+				"depth"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"sele",
+				"selectTimerMax"
+			],
+			[
+				"h",
+				"health"
+			],
+			[
+				"coins",
+				"coinsInPurse"
+			],
+			[
+				"hel",
+				"healthMax"
+			],
+			[
+				"up",
+				"upgradeArmor"
+			],
+			[
+				"enemy",
+				"enemyDepth"
+			],
+			[
+				"dime",
+				"diveAmountDecel"
+			],
+			[
+				"dept",
+				"depthMin"
+			],
+			[
+				"diveam",
+				"diveAmountMax"
+			],
+			[
+				"coin",
+				"coinsInPurse"
+			],
+			[
+				"ugc",
+				"upgradeTankCost"
+			],
+			[
+				"divea",
+				"diveAmountMax"
+			],
+			[
+				"upgradeTankCost",
+				"upgradeTankCost"
+			],
+			[
+				"ri",
+				"riseRateMax"
+			],
+			[
+				"rise",
+				"riseRateMax"
+			],
+			[
+				"upgrade",
+				"upgradeTank"
+			],
+			[
+				"upg",
+				"upgradeName"
+			],
+			[
+				"upgra",
+				"upgradeArmor"
+			],
+			[
+				"bac",
+				"optionBack"
+			],
+			[
+				"armo",
+				"optionUpgradeArmor"
+			],
+			[
+				"sub",
+				"optionUpgradeSubmarine"
+			],
+			[
+				"next",
+				"nextOption"
+			],
+			[
+				"optionup",
+				"optionUpgradeTank"
+			],
+			[
+				"screen",
+				"screenWidth"
+			],
+			[
+				"gra",
+				"graphics"
+			],
+			[
+				"scree",
+				"screenWidth"
+			],
+			[
+				"di",
+				"diveAmountMax"
+			],
+			[
+				"d",
+				"dir"
+			],
+			[
+				"dive",
+				"diveAmountMax"
+			],
+			[
+				"die",
+				"diveDir"
+			],
+			[
+				"diver",
+				"diverDepth"
+			],
+			[
+				"draw",
+				"drawTreasures"
+			],
+			[
+				"scren",
+				"screenHeight"
+			],
+			[
+				"Rise",
+				"riseRateMax"
+			],
+			[
+				"riseac",
+				"riseAccelMax"
+			],
+			[
 				"music",
 				"musicSFX"
 			],
@@ -148,10 +316,6 @@
 				"sprayLevel"
 			],
 			[
-				"enemy",
-				"enemyAngle"
-			],
-			[
 				"monst",
 				"Monster"
 			],
@@ -244,6 +408,28 @@
 	},
 	"file_history":
 	[
+		"/C/Users/MoogleSensei/Desktop/plunge/states/playState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/conf.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/states/victoryState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/states/howToState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/states/menuState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/README.md",
+		"/C/Users/MoogleSensei/Desktop/plunge/main.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/treasures.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/enemies.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/diver.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/angryFish.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/states/titleState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/states/quitState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionBack.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionUpgradeFlippers.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionUpgradeTank.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionUpgradeSubmarine.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionUpgradeArmor.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/optionBack",
+		"/C/Users/MoogleSensei/Desktop/plunge/things/continueButton.lua",
+		"/C/Users/MoogleSensei/Desktop/monsterrevivening/states/levelState.lua",
+		"/C/Users/MoogleSensei/Desktop/plunge/continueButton.lua",
 		"/E/LudumDare34/main.lua",
 		"/C/Users/MoogleSensei/Desktop/LudumDare34/conf.lua",
 		"/C/Users/MoogleSensei/Desktop/LudumDare34/continueButton.lua",
@@ -322,6 +508,48 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"elseif howToSteps == 1 then\n        love.graphics.setFont(font24)\n        love.graphics.printf(\"    You play as the scuba-diving white square on a mission to collect 1,000,000 treasure. Your superiors have demanded you collect as least that much treasure just to make this expedition worth it, though the more you collect, the better you will be paid.\",0,screenHeight/5,screenWidth,'center')\n        love.graphics.printf(\"    Fortunately your superiors have seen fit to offer you better gear that should make collecting mountains of treasure a piece of cake! Unfortunately, it's going to cost you, and you'll be starting out with the worst gear possible.\",0,screenHeight/5+5*24,screenWidth,'center')\n        love.graphics.printf(\"    In order to shop for gear upgrades, simply float up to the surface (or to your submarine) on the right end of the screen.\",0,screenHeight/5+10*24,screenWidth,'center')\n    ",
+			"TitleState",
+			"Tank",
+			"font14",
+			"64",
+			"VictoryState",
+			")\n",
+			"Back",
+			"QuitState",
+			"self.list[i]",
+			"Diver",
+			"upgradeFlippers",
+			"upgradeTank",
+			".nextOption",
+			".text",
+			"optionBack",
+			"coinsInBank",
+			"score",
+			"MenuState",
+			"PlayState",
+			"Treasures",
+			"Diver",
+			"j",
+			"diverDepth",
+			"floor",
+			"(i)",
+			"i",
+			"3",
+			"100*j",
+			"Diver.depth",
+			"Diver.depth/parallaxRate",
+			"background",
+			"bgHeight",
+			"timeSinceMove",
+			"+ ",
+			"diver",
+			"Diver",
+			"Critter",
+			"diver",
+			"x",
+			"Width",
+			"LevelState",
 			"Up",
 			"music",
 			"mainMenu",
@@ -390,7 +618,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -418,6 +646,10 @@
 	"output.exec":
 	{
 		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 142.0
 	},
 	"replace":
 	{

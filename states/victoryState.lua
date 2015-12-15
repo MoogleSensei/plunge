@@ -9,6 +9,7 @@ function VictoryState:enter(previous)
 end
 
 function VictoryState:update(dt)
+    infinitePlay = true
     selectTimer = selectTimer + dt
 end
 
@@ -20,11 +21,11 @@ function VictoryState:draw()
 
     love.graphics.setColor(255,255,255)
     love.graphics.setFont(font72)
-    love.graphics.printf("You win!\nKeep playing?",0,screenHeight/4,screenWidth,'center')
+    love.graphics.printf("You win!",0,screenHeight/4,screenWidth,'center')
 
     love.graphics.setFont(font48)
-    love.graphics.printf("No thanks.",0,7*screenHeight/8,screenWidth/2,'center')
-    love.graphics.printf("YES!",screenWidth/2,7*screenHeight/8,screenWidth/2,'center')
+    love.graphics.printf("Quit",0,7*screenHeight/8,screenWidth/2,'center')
+    love.graphics.printf("Keep playing",screenWidth/2,7*screenHeight/8,screenWidth/2,'center')
 
     love.graphics.setFont(font14)
     love.graphics.printf("(Left to...)",0,13*screenHeight/16,screenWidth/2,'center')

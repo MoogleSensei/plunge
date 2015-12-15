@@ -6,22 +6,16 @@
 -- 
 -- This is my 72 hour Ludum Dare 34 Jam entry.
 -- It's for my third Ludum Dare, though I usually do the Compo, not the Jam.
---Conflicts throughout the weekend prevented me from giving it all my attention, but I have done what I could.
-HC					= require('HC')
+-- Conflicts throughout the weekend prevented me from giving it all my attention, but I have done what I could.
+-- Unfortunately I lacked to time/skill/motivation to do any semi-decent graphics or sound at all. Perhaps they will be added later.
 Class				= require('hump/class')
 GameState 			= require('hump/gamestate')
 TitleState 	        = require('states/titleState')
+HowToState 	        = require('states/howToState')
 PlayState 			= require('states/playState')
 QuitState 			= require('states/quitState')
 MenuState           = require('states/menuState')
 VictoryState 		= require('states/victoryState')
-
--- globalVolume		= 1	-- Initially volume set at 100%
--- musicSFX 			= love.audio.newSource("assets/music.wav", "static")
--- musicSFX:setLooping(true)
--- musicSFX:setVolume(globalVolume)
--- coughSFX 			= love.audio.newSource("assets/cough.wav", "static")
--- chooseMusic			= true
 
 font14 = love.graphics.newFont(14)
 font24 = love.graphics.newFont(24)

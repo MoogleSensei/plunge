@@ -1,8 +1,5 @@
 local PlayState      = Class({})
--- local unleashSFX = love.audio.newSource("assets/unleash.wav", "static")
--- local shakeSFX = love.audio.newSource("assets/shake.wav", "static")
--- local asplodeSFX = love.audio.newSource("assets/asplode.wav", "static")
--- local spraySFX = love.audio.newSource("assets/spray.wav", "static")
+
 screenWidth = love.graphics:getWidth()
 screenHeight = love.graphics:getHeight()
 imgBackground = love.graphics.newImage('assets/background.png')
@@ -15,7 +12,7 @@ darkness = 0
 
 coinsInPurse = 0
 coinsInBank = 0
-local infinitePlay = false
+infinitePlay = false
 Diver = require('things/diver')
 local Enemies = require('things/enemies')
 local Treasures = require('things/treasures')
@@ -34,12 +31,13 @@ end
 function PlayState:update(dt)
     if Diver.depth == Diver.depthMin and               0 <= Diver.x and Diver.x <= screenWidth/5 then
         PlayState:depositCoins(coinsInPurse)
-        GameState.push(QuitState)
-        -- Diver:resetPhysics()
-        Diver.x,Diver.y = screenWidth/2-Diver.width/2, screenHeight/4
-        Diver.health = Diver.healthMax
-        Enemies:clearEnemies()
-        Treasures:clearTreasures()
+        if coinsInBank < 1000000 or infinitePlay then
+            GameState.push(QuitState)
+            Diver.x,Diver.y = screenWidth/2-Diver.width/2, screenHeight/4
+            Diver.health = Diver.healthMax
+            Enemies:clearEnemies()
+            Treasures:clearTreasures()
+        end
     end
     if Diver.depth == Diver.depthMin and   screenWidth/5 <= Diver.x and Diver.x <= 4*screenWidth/5 then
         PlayState:depositCoins(coinsInPurse)
@@ -49,12 +47,13 @@ function PlayState:update(dt)
     end
     if Diver.depth == Diver.depthMin and 4*screenWidth/5 <= Diver.x and Diver.x <= screenWidth then
         PlayState:depositCoins(coinsInPurse)
-        GameState.push(MenuState)
-        -- Diver:resetPhysics()
-        Diver.x,Diver.y = screenWidth/2-Diver.width/2, screenHeight/4
-        Diver.health = Diver.healthMax
-        Enemies:clearEnemies()
-        Treasures:clearTreasures()
+        if coinsInBank < 1000000 or infinitePlay then
+            GameState.push(MenuState)
+            Diver.x,Diver.y = screenWidth/2-Diver.width/2, screenHeight/4
+            Diver.health = Diver.healthMax
+            Enemies:clearEnemies()
+            Treasures:clearTreasures()
+        end
     end
     Diver:update(dt)
     Enemies:addEnemies(Diver.depth)
@@ -77,9 +76,20 @@ function PlayState:draw()
     if Diver.depthMin == 0 then
         love.graphics.setColor(255-darkness,255-darkness,255-darkness)
         love.graphics.draw(imgBoats, 0, -Diver.depth/2, 0, 1, 1)
+        love.graphics.setColor(0,0,0,128)
+        love.graphics.line(screenWidth/5, screenHeight/4-Diver.depth/2, screenWidth/5, 3*screenHeight/4-Diver.depth/2)
+        love.graphics.line(4*screenWidth/5, screenHeight/4-Diver.depth/2, 4*screenWidth/5, 3*screenHeight/4-Diver.depth/2)
+        love.graphics.setColor(0,0,0,64)
+        love.graphics.setFont(font48)
+        love.graphics.printf("Rise to quit",1*screenWidth/10,screenHeight/4-Diver.depth/2,3*screenHeight/4,'left',2*math.pi/5)
+        love.graphics.printf("Rise to upgrade",9*screenWidth/10-36,screenHeight/4-Diver.depth/2,3*screenHeight/4,'left',2*math.pi/5)
     else
         love.graphics.setColor(255-darkness,255-darkness,255-darkness)
         love.graphics.draw(imgSubmarines, 0, Diver.depthMin/2 - Diver.depth/2, 0, 1, 1)
+        love.graphics.setColor(0,0,0,128)
+        love.graphics.line(screenWidth/5, screenHeight/4-Diver.depth/2, screenWidth/5, 3*screenHeight/4-Diver.depth/2)
+        love.graphics.line(4*screenWidth/5, screenHeight/4-Diver.depth/2, 4*screenWidth/5, 3*screenHeight/4-Diver.depth/2)
+
     end
     Enemies:draw(Diver.depth)
     Treasures:draw(Diver.depth)
@@ -115,7 +125,7 @@ function PlayState:depositCoins(coins)
     coinsInPurse = 0
     if coinsInBank >= 1000000 and not(infinitePlay) then
         GameState.push(VictoryState)
-        infinitePlay = true
+        -- infinitePlay = true
     end
 end
 
@@ -123,7 +133,7 @@ function PlayState:keypressed(key)
     if Diver.isAlive then
         if key == 'a' or key == 'left'  then Diver:startDive(-1) end
         if key == 'd' or key == 'right' then Diver:startDive(1) end
-        if key == 'y' then coinsInPurse = coinsInPurse + 100000 end
+        -- if key == 'y' then coinsInPurse = coinsInPurse + 100000 end
     end
 end
 

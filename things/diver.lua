@@ -59,15 +59,6 @@ function Diver:init()
     self.deathTimer = 0
 end
 
-function Diver:resetPhysics()
-    self.x,self.y = screenWidth/2-self.width/2, screenHeight/4
-    -- self.depth = self.depthMin
-    -- self.diveAmount = self.diveAmountMax
-    -- self.riseRate = 0
-    -- self.riseAccel = 0
-    -- self.health = self.healthMax
-end
-
 function Diver:update(dt)
     if self.health <= 0 then
         self.isAlive = false
@@ -133,9 +124,9 @@ function Diver:upgrade(upgradeName)
         if self.upgradeTank < self.upgradeTankMax and coinsInBank >= self.upgradeTankCost then
             coinsInBank = coinsInBank - self.upgradeTankCost
             self.upgradeTank = self.upgradeTank + 1
-            self.riseRateMax = self.riseRateMax + 250*self.upgradeTank
+            self.riseRateMax = self.riseRateMax + 200*self.upgradeTank
             self.riseRate = self.riseRateMax
-            self.riseAccelMax = self.riseAccelMax + 50*(self.upgradeTank-1)
+            self.riseAccelMax = self.riseAccelMax + 25*(self.upgradeTank-1)
             self.riseAccel = self.riseAccelMax
             if self.upgradeTank == self.upgradeTankMax then
                 self.upgradeTankCost = "N/A"
@@ -147,7 +138,7 @@ function Diver:upgrade(upgradeName)
         if self.upgradeFlippers < self.upgradeFlippersMax and coinsInBank >= self.upgradeFlippersCost then
             coinsInBank = coinsInBank - self.upgradeFlippersCost
             self.upgradeFlippers = self.upgradeFlippers + 1
-            self.diveAmountMax = self.diveAmountMax + 8*self.upgradeFlippers
+            self.diveAmountMax = self.diveAmountMax + 8--4*self.upgradeFlippers
             self.diveAmount = self.diveAmountMax
             if self.upgradeFlippers == self.upgradeFlippersMax then
                 self.upgradeFlippersCost = "N/A"
@@ -195,6 +186,7 @@ end
 function Diver:movePlayer(dir, amount)
     self.x = self.x + 8*dir
     if self.riseRate <= amount then
+        if amount >= 32 then amount = 32 end
         self.y = self.y + amount - self.riseRate
         self.depth = self.depth + amount - self.riseRate
     end

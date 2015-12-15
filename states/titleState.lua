@@ -34,14 +34,14 @@ end
 function TitleState:keyreleased(key)
     if selectTimer >= selectTimerMax then
         if key == 'a' or key == 'left'  then love.event.quit() end
-        if key == 'd' or key == 'right' then GameState.switch(PlayState) end
+        if key == 'd' or key == 'right' then GameState.switch(HowToState) end
     end
 end
 
 function TitleState:mousereleased(x, y, button)
     if selectTimer >= selectTimerMax then
         if button == "l" then love.event.quit() end
-        if button == "r" then GameState.switch(PlayState) end
+        if button == "r" then GameState.switch(HowToState) end
     end
 end
 
